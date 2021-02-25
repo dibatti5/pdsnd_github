@@ -132,7 +132,7 @@ def station_stats(df):
         df['End Station'].value_counts())  # create a dictionary of ordered value counts to find most common
     end_station = next(iter(end_station))  # call the key for the most common
 
-    df['Combo Station'] = df['Start Station'] + " combined with " + df[
+    df['Combo Station'] = "start station = "df['Start Station'] + "end station =  " + df[
         'End Station']  # paste both start and stop together to form a new variable
     combo_station = dict(
         df['Combo Station'].value_counts())  # create a dictionary of ordered value counts to find most common
