@@ -152,9 +152,9 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    total_travel_days = ((df['Trip Duration'].sum() / 60) / 60) / 24  # providing a more intuitive answer in days
+    total_travel_days = ((df['Trip Duration'].sum() / 60) / 60) / 24 /7  # providing a more intuitive answer in days
     total_travel = df['Trip Duration'].sum()
-    print("Total travel time in seconds: {}\n This is approximately {} days".format(total_travel, total_travel_days))
+    print("Total travel time in seconds: {}\n This is approximately {} weeks".format(total_travel, total_travel_days))
 
     average_travel = df['Trip Duration'].mean()
     print("The average travel time (in seconds): {}".format(average_travel))
