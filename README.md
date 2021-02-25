@@ -16,6 +16,8 @@ new_york_city.csv
 washington.csv
 
 ### Credits
+The following sites were used to help create the bikeshare.py code
+
 https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
 
 For while loop on valid answers
