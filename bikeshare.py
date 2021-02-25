@@ -132,7 +132,7 @@ def station_stats(df):
         df['End Station'].value_counts())  # create a dictionary of ordered value counts to find most common
     end_station = next(iter(end_station))  # call the key for the most common
 
-    df['Combo Station'] = df['Start Station'] + " combined with " + df[
+    df['Combo Station'] = "start station = "df['Start Station'] + "end station =  " + df[
         'End Station']  # paste both start and stop together to form a new variable
     combo_station = dict(
         df['Combo Station'].value_counts())  # create a dictionary of ordered value counts to find most common
@@ -152,9 +152,9 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    total_travel_days = ((df['Trip Duration'].sum() / 60) / 60) / 24  # providing a more intuitive answer in days
+    total_travel_days = ((df['Trip Duration'].sum() / 60) / 60) / 24 /7  # providing a more intuitive answer in days
     total_travel = df['Trip Duration'].sum()
-    print("Total travel time in seconds: {}\n This is approximately {} days".format(total_travel, total_travel_days))
+    print("Total travel time in seconds: {}\n This is approximately {} weeks".format(total_travel, total_travel_days))
 
     average_travel = df['Trip Duration'].mean()
     print("The average travel time (in seconds): {}".format(average_travel))
@@ -220,6 +220,11 @@ def display_data(df):
     return("ok that's it for raw data")
 
 def main():
+
+    """
+    Aggregates all functions to provide the end product: an interactive user script
+
+    """
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
