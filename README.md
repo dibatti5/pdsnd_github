@@ -7,7 +7,7 @@ Feb 21st, 2021
 Bikeshare
 
 ### Description
-The project provides an interactive environment to provide the user with information on US bikeshare services from 3 major cities. The code allows for filtering by city, month, and day of the week.
+The project provides an interactive environment to provide the user with information on US bikeshare services from 3 major cities. The code allows for filtering by city, month, and day of the week. Users are also prompted with the choice of viewing raw data.
 
 ### Files used
 bikeshare.py
