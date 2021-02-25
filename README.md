@@ -4,13 +4,16 @@
 Feb 21st, 2021
 
 ### Project Title
-Bikeshare
+Interacting with bikeshare program data
 
 ### Description
 The project provides an interactive environment to provide the user with information on US bikeshare services from 3 major cities. The code allows for filtering by city, month, and day of the week. Users are also prompted with the choice of viewing raw data.
 
 ### Files used
+Python
 bikeshare.py
+
+Data
 chicago.csv
 new_york_city.csv
 washington.csv
