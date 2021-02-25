@@ -220,6 +220,11 @@ def display_data(df):
     return("ok that's it for raw data")
 
 def main():
+
+    """
+    Aggregates all functions to provide the end product: an interactive user script
+
+    """
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
